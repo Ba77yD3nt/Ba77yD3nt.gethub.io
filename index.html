@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Will You Be My Valentine?</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-image: url("/images/hearts.jpg");
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            color: #fff; /* Set text color to white for better visibility on the image */
+        }
+       
+       
+        #container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #e44d26;
+        }
+
+        p {
+            color: #333;
+        }
+
+        #response-input {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #submit-button {
+            background-color: #e44d26;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div id="container">
+    <h1>Will You Be My Valentine?</h1>
+    <p>Dear Delores,</p>
+    <p> We both know that special day is approching, and I wanna know....... </br> will you be my Valentine?</p>
+    <p>Please let me know your response by typing "Yes" or "No" in the box below:</p>
+    
+    <input type="text" id="response-input" placeholder="Type your response here">
+
+    <button id="submit-button" onclick="submitResponse()">Submit</button>
+</div>
+
+<script>
+    function submitResponse() {
+        var response = document.getElementById("response-input").value.toLowerCase();
+        
+        if (response === "yes") {
+            alert("Bett, I can't wait to spend Valentine's Day with you! Smooches!");
+        } else if (response === "no") {
+            alert("No worries, I appreciate your honesty. If you change your mind, feel free to reach out!");
+        } else {
+            alert("Quit being hard headed and enter Yes or NO.");
+        }
+    }
+</script>
+
+</body>
+</html>
